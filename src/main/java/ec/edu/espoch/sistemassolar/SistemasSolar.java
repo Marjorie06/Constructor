@@ -5,7 +5,7 @@
 package ec.edu.espoch.sistemassolar;
 
 import ec.edu.espoch.sistemassolar.clase.Planeta;
-import ec.edu.espoch.sistemassolar.clase.enumeraciones.TipoPlaneta;
+import ec.edu.espoch.sistemassolar.enumeracion.tipoPlaneta;
 
 /**
  *
