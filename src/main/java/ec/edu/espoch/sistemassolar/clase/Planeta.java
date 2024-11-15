@@ -21,25 +21,36 @@ public class Planeta {
     public int distanciaMedidaSol;
     public TipoPlaneta tipoPlaneta;
     public  boolean exterior=false;
+
+
     
     //Constructor
+    //vacio
     public Planeta(){
     }
     
-   
-    /* public Planeta(){
-        
-    }*/
+      
+    //constructor no vacio
     
-    public Planeta(String nombre){
+    public Planeta(String nombre, int cantidadSatelite, double masaKilometro, double volKm3, double kilometro, int distanciaMedidaSol, TipoPlaneta tipoPlaneta){
         this.nombre=nombre;
+        this.cantidadSatelite = cantidadSatelite;
+        this.masaKilometro = masaKilometro;
+        this.volKm3 = volKm3;
+        this.kilometro = kilometro;
+        this.distanciaMedidaSol = distanciaMedidaSol;
+        this.tipoPlaneta = tipoPlaneta;
+        this.exterior();
+    
+        
+       
+    }
         
     }
 
-    //constructor no vacio
+ 
     
-    
- public void imprimir(){
+    public void imprimir(){
      System.out.println("Nombre:"+ nombre);
      System.out.println("Cantidad de satelites:"+ cantidadSatelite);
      System.out.println("Masa en kilometros:"+ masaKilometro);
@@ -47,6 +58,7 @@ public class Planeta {
      System.out.println("Diametros en kiulometros:"+ kilometro);
      System.out.println("Distancia en mediad al sol:"+ distanciaMedidaSol);
      System.out.println("Tipo de Planeta:"+ tipoPlaneta);
+
  }           
             
     
@@ -69,4 +81,4 @@ public class Planeta {
        return false;
         
     }
-}
+
